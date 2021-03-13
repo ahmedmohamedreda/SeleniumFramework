@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-01T23:31:05.098Z",
+        "line": 10,
+        "name": "User Register with valid data.",
+        "description": "",
+        "id": "test-the-registration-functionality;user-register-with-valid-data.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11993000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User in the home page and go to Registration page",
+            "match": {
+              "location": "steps.UserRegister.user_in_the_home_page_and_go_to_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "fill out the form with valid data \"Ahmed\",\"REE11\",\"Ayy48@Test.com\",\"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ahmed\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"REE11\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Ayy48@Test.com\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 67
+                }
+              ],
+              "location": "steps.UserRegister.fill_out_the_form_with_valid_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should navigate to homepage After receive the success message",
+            "match": {
+              "location": "steps.UserRegister.user_should_navigate_to_home_page_after_recive_the_success_massage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-01T23:31:05.227Z",
+        "line": 11,
+        "name": "User Register with valid data.",
+        "description": "",
+        "id": "test-the-registration-functionality;user-register-with-valid-data.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User in the home page and go to Registration page",
+            "match": {
+              "location": "steps.UserRegister.user_in_the_home_page_and_go_to_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "fill out the form with valid data \"Mohmed\",\"REE11\",\"Ree72@Test.com\",\"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mohmed\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"REE11\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Ree72@Test.com\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 68
+                }
+              ],
+              "location": "steps.UserRegister.fill_out_the_form_with_valid_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should navigate to homepage After receive the success message",
+            "match": {
+              "location": "steps.UserRegister.user_should_navigate_to_home_page_after_recive_the_success_massage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test the Registration functionality",
+    "description": "",
+    "id": "test-the-registration-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/UserRegistration.feature",
+    "tags": []
+  }
+]rd": "Feature",
+    "uri": "file:src/test/java/features/UserRegistration.feature",
+    "tags": []
+  }
+]
