@@ -1,102 +1,840 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="18" passed="2" failed="8" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T01:30:56 EET" name="Default suite" finished-at="2021-03-02T01:31:06 EET" duration-ms="9805">
+  <suite started-at="2021-06-25T19:41:41 EET" name="nopcommerce website" finished-at="2021-06-25T19:48:32 EET" duration-ms="410920">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@f736069]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.CheckoutTest@614ca7df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SearchTest@4738a206]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-02T01:30:56 EET" name="Default test" finished-at="2021-03-02T01:31:06 EET" duration-ms="9805">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:30:14 EET" name="StartDriver" finished-at="2021-03-02T01:30:56 EET" duration-ms="41754" status="PASS">
+    <test started-at="2021-06-25T19:41:41 EET" name="Regression" finished-at="2021-06-25T19:48:32 EET" duration-ms="410920">
+      <class name="tests.UserRegistrationTest">
+        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:41:34 EET" name="StartDriver" finished-at="2021-06-25T19:41:41 EET" duration-ms="6665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:30:56 EET" name="setUpClass" finished-at="2021-03-02T01:31:04 EET" duration-ms="7666" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:42:34 EET" name="setUpClass" finished-at="2021-06-25T19:42:34 EET" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="waitt()[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:04 EET" name="waitt" finished-at="2021-03-02T01:31:04 EET" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:42:38 EET" name="waitt" finished-at="2021-06-25T19:42:38 EET" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitt -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:04 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T01:31:05 EET" duration-ms="689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Register with valid data."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Test the Registration functionality]"]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="UserCanRegistrationSuccessfully()[pri:1, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:42:38 EET" name="UserCanRegistrationSuccessfully" finished-at="2021-06-25T19:43:28 EET" duration-ms="50304" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with link text 'Register'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"49","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Register\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with link text 'Register'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"49","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Register\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:24)
+at pages.HomePage.OpenRegistrationPage(HomePage.java:32)
+at tests.UserRegistrationTest.UserCanRegistrationSuccessfully(UserRegistrationTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with link text 'Register'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"49","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Register\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:05 EET" name="ScreenshotOnFailure" finished-at="2021-03-02T01:31:05 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- UserCanRegistrationSuccessfully -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:43:28 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:43:29 EET" duration-ms="252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@f736069] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegistrationSuccessfully status=FAILURE method=UserRegistrationTest.UserCanRegistrationSuccessfully()[pri:1, instance:tests.UserRegistrationTest@6cd28fa7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="waitt()[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:05 EET" name="waitt" finished-at="2021-03-02T01:31:05 EET" duration-ms="9" status="PASS">
+        <test-method signature="User_Can_Logout()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:43:29 EET" name="User_Can_Logout" finished-at="2021-06-25T19:43:29 EET" depends-on-methods="tests.UserRegistrationTest.UserCanRegistrationSuccessfully" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method UserRegistrationTest.User_Can_Logout()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method UserRegistrationTest.User_Can_Logout()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- waitt -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:05 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T01:31:05 EET" duration-ms="22" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Register with valid data."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Test the Registration functionality]"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- User_Can_Logout -->
+        <test-method signature="User_Can_Login()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:43:29 EET" name="User_Can_Login" finished-at="2021-06-25T19:43:29 EET" depends-on-methods="tests.UserRegistrationTest.User_Can_Logout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method UserRegistrationTest.User_Can_Login()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method UserRegistrationTest.User_Can_Login()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:05 EET" name="ScreenshotOnFailure" finished-at="2021-03-02T01:31:05 EET" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@f736069] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:05 EET" name="tearDownClass" finished-at="2021-03-02T01:31:06 EET" duration-ms="1129" status="PASS">
+        </test-method> <!-- User_Can_Login -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:43:29 EET" name="tearDownClass" finished-at="2021-06-25T19:43:29 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="StopDriver()[pri:0, instance:runner.TestRunner@f736069]" started-at="2021-03-02T01:31:07 EET" name="StopDriver" finished-at="2021-03-02T01:31:16 EET" duration-ms="9553" status="PASS">
+        <test-method is-config="true" signature="StopDriver()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7]" started-at="2021-06-25T19:48:32 EET" name="StopDriver" finished-at="2021-06-25T19:48:33 EET" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopDriver -->
-      </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.UserRegistrationTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:42:34 EET" name="setUpClass" finished-at="2021-06-25T19:42:34 EET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:43:29 EET" name="waitt" finished-at="2021-06-25T19:43:29 EET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="UserCanSearchForProduct_UsingAutoSugest()[pri:1, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:43:29 EET" name="UserCanSearchForProduct_UsingAutoSugest" finished-at="2021-06-25T19:43:29 EET" duration-ms="663" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.SearchPage.SearchUsingAutoSuggest(SearchPage.java:42)
+at tests.CheckoutTest.UserCanSearchForProduct_UsingAutoSugest(CheckoutTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 38 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProduct_UsingAutoSugest -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:43:29 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:43:30 EET" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchForProduct_UsingAutoSugest status=FAILURE method=CheckoutTest.UserCanSearchForProduct_UsingAutoSugest()[pri:1, instance:tests.CheckoutTest@614ca7df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:43:30 EET" name="waitt" finished-at="2021-06-25T19:43:30 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="User_Can_Add_Product_To_Cart()[pri:2, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:43:30 EET" name="User_Can_Add_Product_To_Cart" finished-at="2021-06-25T19:46:51 EET" duration-ms="200303" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with id 'add-to-cart-button-4'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"54","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"add-to-cart-button-4\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with id 'add-to-cart-button-4'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"54","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"add-to-cart-button-4\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:24)
+at pages.ShoppingCartPage.Add_to_Cart_Button(ShoppingCartPage.java:45)
+at tests.CheckoutTest.User_Can_Add_Product_To_Cart(CheckoutTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with id 'add-to-cart-button-4'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"54","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"add-to-cart-button-4\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Can_Add_Product_To_Cart -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:46:51 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:46:51 EET" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Can_Add_Product_To_Cart status=FAILURE method=CheckoutTest.User_Can_Add_Product_To_Cart()[pri:2, instance:tests.CheckoutTest@614ca7df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:46:51 EET" name="waitt" finished-at="2021-06-25T19:46:51 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="User_Can_Checkout_FromCart()[pri:3, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:46:51 EET" name="User_Can_Checkout_FromCart" finished-at="2021-06-25T19:47:41 EET" duration-ms="50244" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with id 'termsofservice'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"48","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"termsofservice\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with id 'termsofservice'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"48","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"termsofservice\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:24)
+at pages.CheckoutPage.Open_AS_Guest(CheckoutPage.java:90)
+at tests.CheckoutTest.User_Can_Checkout_FromCart(CheckoutTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with id 'termsofservice'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"48","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"id\",\n  \"value\": \"termsofservice\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Can_Checkout_FromCart -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:47:41 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:47:41 EET" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Can_Checkout_FromCart status=FAILURE method=CheckoutTest.User_Can_Checkout_FromCart()[pri:3, instance:tests.CheckoutTest@614ca7df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:47:41 EET" name="waitt" finished-at="2021-06-25T19:47:41 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="User_Can_Downloading_Orderinformation()[pri:4, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:47:41 EET" name="User_Can_Downloading_Orderinformation" finished-at="2021-06-25T19:48:32 EET" duration-ms="50216" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with link text 'Click here for order details.'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"70","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Click here for order details.\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with link text 'Click here for order details.'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"70","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Click here for order details.\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:24)
+at pages.CheckoutPage.order_details_TO_Dowmload_OR_Print(CheckoutPage.java:119)
+at tests.CheckoutTest.User_Can_Downloading_Orderinformation(CheckoutTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with link text 'Click here for order details.'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"70","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"link text\",\n  \"value\": \"Click here for order details.\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Can_Downloading_Orderinformation -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:48:32 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:48:32 EET" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Can_Downloading_Orderinformation status=FAILURE method=CheckoutTest.User_Can_Downloading_Orderinformation()[pri:4, instance:tests.CheckoutTest@614ca7df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.CheckoutTest@614ca7df]" started-at="2021-06-25T19:48:32 EET" name="tearDownClass" finished-at="2021-06-25T19:48:32 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.CheckoutTest -->
+      <class name="tests.SentProductToFriendUsingTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:42:34 EET" name="setUpClass" finished-at="2021-06-25T19:42:34 EET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:42:34 EET" name="waitt" finished-at="2021-06-25T19:42:34 EET" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="UserCanRegistrationSuccessfully()[pri:1, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:42:34 EET" name="UserCanRegistrationSuccessfully" finished-at="2021-06-25T19:42:38 EET" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegistrationSuccessfully -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:42:38 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:42:38 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRegistrationSuccessfully status=SUCCESS method=SentProductToFriendUsingTest.UserCanRegistrationSuccessfully()[pri:1, instance:tests.SentProductToFriendUsingTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:43:30 EET" name="waitt" finished-at="2021-06-25T19:43:30 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="UserCanSearchForProduct_UsingAutoSugest()[pri:2, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:43:30 EET" name="UserCanSearchForProduct_UsingAutoSugest" finished-at="2021-06-25T19:43:30 EET" duration-ms="453" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.SearchPage.SearchUsingAutoSuggest(SearchPage.java:42)
+at tests.SentProductToFriendUsingTest.UserCanSearchForProduct_UsingAutoSugest(SentProductToFriendUsingTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 38 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1624642958521\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click"}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProduct_UsingAutoSugest -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:43:30 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:43:30 EET" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchForProduct_UsingAutoSugest status=FAILURE method=SentProductToFriendUsingTest.UserCanSearchForProduct_UsingAutoSugest()[pri:2, instance:tests.SentProductToFriendUsingTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:46:51 EET" name="waitt" finished-at="2021-06-25T19:46:51 EET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="UserCanSentproductToFriendUsingEmail()[pri:3, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:46:51 EET" name="UserCanSentproductToFriendUsingEmail" finished-at="2021-06-25T19:46:51 EET" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "pages.ProductDetailPage.OpenEmailafriendPage()" because "this.PDP_Obj" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "pages.ProductDetailPage.OpenEmailafriendPage()" because "this.PDP_Obj" is null
+at tests.SentProductToFriendUsingTest.UserCanSentproductToFriendUsingEmail(SentProductToFriendUsingTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSentproductToFriendUsingEmail -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:46:51 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:46:51 EET" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSentproductToFriendUsingEmail status=FAILURE method=SentProductToFriendUsingTest.UserCanSentproductToFriendUsingEmail()[pri:3, instance:tests.SentProductToFriendUsingTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:48:32 EET" name="waitt" finished-at="2021-06-25T19:48:32 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="User_Can_Logout()[pri:4, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:48:32 EET" name="User_Can_Logout" finished-at="2021-06-25T19:48:32 EET" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Can_Logout -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:48:32 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:48:32 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Can_Logout status=SUCCESS method=SentProductToFriendUsingTest.User_Can_Logout()[pri:4, instance:tests.SentProductToFriendUsingTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SentProductToFriendUsingTest@66d3eec0]" started-at="2021-06-25T19:48:32 EET" name="tearDownClass" finished-at="2021-06-25T19:48:32 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.SentProductToFriendUsingTest -->
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.SearchTest@4738a206]" started-at="2021-06-25T19:41:41 EET" name="setUpClass" finished-at="2021-06-25T19:41:41 EET" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="waitt()[pri:0, instance:tests.SearchTest@4738a206]" started-at="2021-06-25T19:41:41 EET" name="waitt" finished-at="2021-06-25T19:41:41 EET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitt -->
+        <test-method signature="UserCanSearchForProduct()[pri:0, instance:tests.SearchTest@4738a206]" started-at="2021-06-25T19:41:41 EET" name="UserCanSearchForProduct" finished-at="2021-06-25T19:42:33 EET" duration-ms="51357" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with css selector 'input.button-1.search-box-button'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"76","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"css selector\",\n  \"value\": \"input.button-1.search-box-button\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector 'input.button-1.search-box-button'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"76","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"css selector\",\n  \"value\": \"input.button-1.search-box-button\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+Command duration or timeout: 0 milliseconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:24)
+at pages.SearchPage.ProductsSearch(SearchPage.java:31)
+at tests.SearchTest.UserCanSearchForProduct(SearchTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector 'input.button-1.search-box-button'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"76","Content-Type":"application/json; charset=utf-8","Host":"localhost:23487","User-Agent":"selenium/3.141.59 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"css selector\",\n  \"value\": \"input.button-1.search-box-button\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I2Q0NO0', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProduct -->
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchTest@4738a206]" started-at="2021-06-25T19:42:33 EET" name="ScreenshotOnFailure" finished-at="2021-06-25T19:42:34 EET" duration-ms="1047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchForProduct status=FAILURE method=SearchTest.UserCanSearchForProduct()[pri:0, instance:tests.SearchTest@4738a206] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SearchTest@4738a206]" started-at="2021-06-25T19:42:34 EET" name="tearDownClass" finished-at="2021-06-25T19:42:34 EET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- nopcommerce website -->
 </testng-results>
-

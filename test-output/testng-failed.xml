@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [nopcommerce website]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="headless"/>
+  <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="runner.TestRunner">
+      <class name="tests.UserRegistrationTest">
+        <methods>
+          <include name="User_Can_Logout"/>
+          <include name="StopDriver"/>
+          <include name="ScreenshotOnFailure"/>
+          <include name="User_Can_Login"/>
+          <include name="tearDownClass"/>
+          <include name="waitt"/>
+          <include name="UserCanRegistrationSuccessfully"/>
+          <include name="StartDriver"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.UserRegistrationTest -->
+      <class name="tests.SentProductToFriendUsingTest">
         <methods>
           <include name="StopDriver"/>
           <include name="ScreenshotOnFailure"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="UserCanSentproductToFriendUsingEmail"/>
           <include name="tearDownClass"/>
+          <include name="UserCanSearchForProduct_UsingAutoSugest"/>
           <include name="waitt"/>
           <include name="StartDriver"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- tests.SentProductToFriendUsingTest -->
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="User_Can_Checkout_FromCart"/>
+          <include name="User_Can_Downloading_Orderinformation"/>
+          <include name="StopDriver"/>
+          <include name="ScreenshotOnFailure"/>
+          <include name="User_Can_Add_Product_To_Cart"/>
+          <include name="tearDownClass"/>
+          <include name="waitt"/>
+          <include name="UserCanSearchForProduct_UsingAutoSugest"/>
+          <include name="StartDriver"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
+      <class name="tests.SearchTest">
+        <methods>
+          <include name="StopDriver"/>
+          <include name="ScreenshotOnFailure"/>
+          <include name="tearDownClass"/>
+          <include name="UserCanSearchForProduct"/>
+          <include name="waitt"/>
+          <include name="StartDriver"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.SearchTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [nopcommerce website] -->
