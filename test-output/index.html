@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-nopcommerce_website" class="navigator-link">
+              <span class="suite-name border-failed">nopcommerce website</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Ahmed\AppData\Local\Temp\testng-eclipse--1099757899\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-nopcommerce_website" class="navigator-link ">
+                    <span>F:\eclipse-workspace\POM_2\TEST_NG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-nopcommerce_website" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                  <a href="#" panel-name="group-nopcommerce_website" class="navigator-link ">
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-nopcommerce_website" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-nopcommerce_website" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-nopcommerce_website" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-nopcommerce_website" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,26 +93,94 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">12 methods, 8 failed,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-nopcommerce_website" class="hide-methods failed suite-nopcommerce_website"> (hide)</a> <!-- hide-methods failed suite-nopcommerce_website -->
+                      <a href="#" panel-name="suite-nopcommerce_website" class="show-methods failed suite-nopcommerce_website"> (show)</a> <!-- show-methods failed suite-nopcommerce_website -->
+                    </span>
+                    <div class="method-list-content failed suite-nopcommerce_website">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.UserRegistrationTest" class="method navigator-link" hash-for-method="UserCanRegistrationSuccessfully">UserCanRegistrationSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.SearchTest" class="method navigator-link" hash-for-method="UserCanSearchForProduct">UserCanSearchForProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="UserCanSearchForProduct_UsingAutoSugest">UserCanSearchForProduct_UsingAutoSugest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.SentProductToFriendUsingTest" class="method navigator-link" hash-for-method="UserCanSearchForProduct_UsingAutoSugest">UserCanSearchForProduct_UsingAutoSugest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.SentProductToFriendUsingTest" class="method navigator-link" hash-for-method="UserCanSentproductToFriendUsingEmail">UserCanSentproductToFriendUsingEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="User_Can_Add_Product_To_Cart">User_Can_Add_Product_To_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="User_Can_Checkout_FromCart">User_Can_Checkout_FromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="User_Can_Downloading_Orderinformation">User_Can_Downloading_Orderinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-nopcommerce_website -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-nopcommerce_website" class="hide-methods skipped suite-nopcommerce_website"> (hide)</a> <!-- hide-methods skipped suite-nopcommerce_website -->
+                      <a href="#" panel-name="suite-nopcommerce_website" class="show-methods skipped suite-nopcommerce_website"> (show)</a> <!-- show-methods skipped suite-nopcommerce_website -->
+                    </span>
+                    <div class="method-list-content skipped suite-nopcommerce_website">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.UserRegistrationTest" class="method navigator-link" hash-for-method="User_Can_Login">User_Can_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.UserRegistrationTest" class="method navigator-link" hash-for-method="User_Can_Logout">User_Can_Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-nopcommerce_website -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-nopcommerce_website" class="hide-methods passed suite-nopcommerce_website"> (hide)</a> <!-- hide-methods passed suite-nopcommerce_website -->
+                      <a href="#" panel-name="suite-nopcommerce_website" class="show-methods passed suite-nopcommerce_website"> (show)</a> <!-- show-methods passed suite-nopcommerce_website -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-nopcommerce_website">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Register with valid data.&quot;, &quot;Optional[Test the Registration functionality]&quot;)">runScenario("User Register with valid data.", "Optional[Test the Registration functionality]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.SentProductToFriendUsingTest" class="method navigator-link" hash-for-method="UserCanRegistrationSuccessfully">UserCanRegistrationSuccessfully</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Register with valid data.&quot;, &quot;Optional[Test the Registration functionality]&quot;)">runScenario("User Register with valid data.", "Optional[Test the Registration functionality]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopcommerce_website" title="tests.SentProductToFriendUsingTest" class="method navigator-link" hash-for-method="User_Can_Logout">User_Can_Logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-nopcommerce_website -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,174 +191,743 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-nopcommerce_website" class="panel nopcommerce_website">
+          <div class="suite-nopcommerce_website-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runner.TestRunner</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.UserRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Register with valid data.&quot;, &quot;Optional[Test the Registration functionality]&quot;)">
-                  </a> <!-- runScenario("User Register with valid data.", "Optional[Test the Registration functionality]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Register with valid data.", "Optional[Test the Registration functionality]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
+                  <a name="UserCanRegistrationSuccessfully">
+                  </a> <!-- UserCanRegistrationSuccessfully -->
+                  <span class="method-name">UserCanRegistrationSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with link text &apos;Register&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;49&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;link text\&quot;,\n  \&quot;value\&quot;: \&quot;Register\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:24)
+	at pages.HomePage.OpenRegistrationPage(HomePage.java:32)
+	at tests.UserRegistrationTest.UserCanRegistrationSuccessfully(UserRegistrationTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with link text &apos;Register&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;49&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;link text\&quot;,\n  \&quot;value\&quot;: \&quot;Register\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopcommerce_website-class-failed -->
+          <div class="suite-nopcommerce_website-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SentProductToFriendUsingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanSearchForProduct_UsingAutoSugest">
+                  </a> <!-- UserCanSearchForProduct_UsingAutoSugest -->
+                  <span class="method-name">UserCanSearchForProduct_UsingAutoSugest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: {&quot;errorMessage&quot;:&quot;Element is not currently visible and may not be manipulated&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;32&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;id\&quot;: \&quot;:wdc:1624642958521\&quot;\n}&quot;,&quot;url&quot;:&quot;/click&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;click&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/click&quot;,&quot;relative&quot;:&quot;/click&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/click&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;click&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.SearchPage.SearchUsingAutoSuggest(SearchPage.java:42)
+	at tests.SentProductToFriendUsingTest.UserCanSearchForProduct_UsingAutoSugest(SentProductToFriendUsingTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 38 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: {&quot;errorMessage&quot;:&quot;Element is not currently visible and may not be manipulated&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;32&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;id\&quot;: \&quot;:wdc:1624642958521\&quot;\n}&quot;,&quot;url&quot;:&quot;/click&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;click&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/click&quot;,&quot;relative&quot;:&quot;/click&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/click&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;click&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click&quot;}}
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Register with valid data.&quot;, &quot;Optional[Test the Registration functionality]&quot;)">
-                  </a> <!-- runScenario("User Register with valid data.", "Optional[Test the Registration functionality]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Register with valid data.", "Optional[Test e Registration functionality]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
+                  <a name="UserCanSentproductToFriendUsingEmail">
+                  </a> <!-- UserCanSentproductToFriendUsingEmail -->
+                  <span class="method-name">UserCanSentproductToFriendUsingEmail</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.ProductDetailPage.OpenEmailafriendPage()&quot; because &quot;this.PDP_Obj&quot; is null
+	at tests.SentProductToFriendUsingTest.UserCanSentproductToFriendUsingEmail(SentProductToFriendUsingTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-nopcommerce_website-class-failed -->
+          <div class="suite-nopcommerce_website-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanSearchForProduct_UsingAutoSugest">
+                  </a> <!-- UserCanSearchForProduct_UsingAutoSugest -->
+                  <span class="method-name">UserCanSearchForProduct_UsingAutoSugest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: {&quot;errorMessage&quot;:&quot;Element is not currently visible and may not be manipulated&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;32&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;id\&quot;: \&quot;:wdc:1624642958521\&quot;\n}&quot;,&quot;url&quot;:&quot;/click&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;click&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/click&quot;,&quot;relative&quot;:&quot;/click&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/click&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;click&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.SearchPage.SearchUsingAutoSuggest(SearchPage.java:42)
+	at tests.CheckoutTest.UserCanSearchForProduct_UsingAutoSugest(CheckoutTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 38 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: {&quot;errorMessage&quot;:&quot;Element is not currently visible and may not be manipulated&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;32&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;id\&quot;: \&quot;:wdc:1624642958521\&quot;\n}&quot;,&quot;url&quot;:&quot;/click&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;click&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/click&quot;,&quot;relative&quot;:&quot;/click&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/click&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;click&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element/:wdc:1624642958521/click&quot;}}
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Add_Product_To_Cart">
+                  </a> <!-- User_Can_Add_Product_To_Cart -->
+                  <span class="method-name">User_Can_Add_Product_To_Cart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;add-to-cart-button-4&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;54&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;id\&quot;,\n  \&quot;value\&quot;: \&quot;add-to-cart-button-4\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:24)
+	at pages.ShoppingCartPage.Add_to_Cart_Button(ShoppingCartPage.java:45)
+	at tests.CheckoutTest.User_Can_Add_Product_To_Cart(CheckoutTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;add-to-cart-button-4&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;54&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;id\&quot;,\n  \&quot;value\&quot;: \&quot;add-to-cart-button-4\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Checkout_FromCart">
+                  </a> <!-- User_Can_Checkout_FromCart -->
+                  <span class="method-name">User_Can_Checkout_FromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;termsofservice&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;48&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;id\&quot;,\n  \&quot;value\&quot;: \&quot;termsofservice\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:24)
+	at pages.CheckoutPage.Open_AS_Guest(CheckoutPage.java:90)
+	at tests.CheckoutTest.User_Can_Checkout_FromCart(CheckoutTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with id &apos;termsofservice&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;48&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;id\&quot;,\n  \&quot;value\&quot;: \&quot;termsofservice\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Downloading_Orderinformation">
+                  </a> <!-- User_Can_Downloading_Orderinformation -->
+                  <span class="method-name">User_Can_Downloading_Orderinformation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with link text &apos;Click here for order details.&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;70&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;link text\&quot;,\n  \&quot;value\&quot;: \&quot;Click here for order details.\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:24)
+	at pages.CheckoutPage.order_details_TO_Dowmload_OR_Print(CheckoutPage.java:119)
+	at tests.CheckoutTest.User_Can_Downloading_Orderinformation(CheckoutTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with link text &apos;Click here for order details.&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;70&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;link text\&quot;,\n  \&quot;value\&quot;: \&quot;Click here for order details.\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopcommerce_website-class-failed -->
+          <div class="suite-nopcommerce_website-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanSearchForProduct">
+                  </a> <!-- UserCanSearchForProduct -->
+                  <span class="method-name">UserCanSearchForProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with css selector &apos;input.button-1.search-box-button&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;76&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;css selector\&quot;,\n  \&quot;value\&quot;: \&quot;input.button-1.search-box-button\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:24)
+	at pages.SearchPage.ProductsSearch(SearchPage.java:31)
+	at tests.SearchTest.UserCanSearchForProduct(SearchTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with css selector &apos;input.button-1.search-box-button&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;76&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:23487&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java windows)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;css selector\&quot;,\n  \&quot;value\&quot;: \&quot;input.button-1.search-box-button\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/97c73b70-d5dc-11eb-a864-ef69cd28c820/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-I2Q0NO0&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopcommerce_website-class-failed -->
+          <div class="suite-nopcommerce_website-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.UserRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Login">
+                  </a> <!-- User_Can_Login -->
+                  <span class="method-name">User_Can_Login</span>
+                  <div class="stack-trace">java.lang.Throwable: Method UserRegistrationTest.User_Can_Login()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Logout">
+                  </a> <!-- User_Can_Logout -->
+                  <span class="method-name">User_Can_Logout</span>
+                  <div class="stack-trace">java.lang.Throwable: Method UserRegistrationTest.User_Can_Logout()[pri:0, instance:tests.UserRegistrationTest@6cd28fa7] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopcommerce_website-class-skipped -->
+          <div class="suite-nopcommerce_website-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SentProductToFriendUsingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanRegistrationSuccessfully">
+                  </a> <!-- UserCanRegistrationSuccessfully -->
+                  <span class="method-name">UserCanRegistrationSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Can_Logout">
+                  </a> <!-- User_Can_Logout -->
+                  <span class="method-name">User_Can_Logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopcommerce_website-class-passed -->
+        </div> <!-- panel nopcommerce_website -->
+        <div panel-name="test-xml-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ahmed\AppData\Local\Temp\testng-eclipse-134901322\testng-customsuite.xml</span>
+            <span class="header-content">F:\eclipse-workspace\POM_2\TEST_NG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;nopcommerce website&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;headless&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;tests.UserRegistrationTest&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchTest&quot;/&gt;
+      &lt;class name=&quot;tests.SentProductToFriendUsingTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
+&lt;/suite&gt; &lt;!-- nopcommerce website --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for nopcommerce website</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Regression (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for nopcommerce website</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">runScenario</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for nopcommerce website</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_nopcommerce_website');
+function tableData_nopcommerce_website() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 689);
+data.setCell(0, 1, 'User_Can_Add_Product_To_Cart')
+data.setCell(0, 2, 'tests.CheckoutTest')
+data.setCell(0, 3, 200303);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 22);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'UserCanSearchForProduct')
+data.setCell(1, 2, 'tests.SearchTest')
+data.setCell(1, 3, 51357);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UserCanRegistrationSuccessfully')
+data.setCell(2, 2, 'tests.UserRegistrationTest')
+data.setCell(2, 3, 50304);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'User_Can_Checkout_FromCart')
+data.setCell(3, 2, 'tests.CheckoutTest')
+data.setCell(3, 3, 50244);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'User_Can_Downloading_Orderinformation')
+data.setCell(4, 2, 'tests.CheckoutTest')
+data.setCell(4, 3, 50216);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'UserCanRegistrationSuccessfully')
+data.setCell(5, 2, 'tests.SentProductToFriendUsingTest')
+data.setCell(5, 3, 4145);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UserCanSearchForProduct_UsingAutoSugest')
+data.setCell(6, 2, 'tests.CheckoutTest')
+data.setCell(6, 3, 663);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'UserCanSearchForProduct_UsingAutoSugest')
+data.setCell(7, 2, 'tests.SentProductToFriendUsingTest')
+data.setCell(7, 3, 453);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'User_Can_Logout')
+data.setCell(8, 2, 'tests.SentProductToFriendUsingTest')
+data.setCell(8, 3, 48);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'UserCanSentproductToFriendUsingEmail')
+data.setCell(9, 2, 'tests.SentProductToFriendUsingTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'User_Can_Logout')
+data.setCell(10, 2, 'tests.UserRegistrationTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'User_Can_Login')
+data.setCell(11, 2, 'tests.UserRegistrationTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['nopcommerce_website']= { tableData: data, tableDiv: 'times-div-nopcommerce_website'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 711 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-nopcommerce_website">
+              </div> <!-- times-div-nopcommerce_website -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for nopcommerce website</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SentProductToFriendUsingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">StopDriver</span>
+                <br/>
+                <span class="ignored-method-name">StartDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">StopDriver</span>
+                <br/>
+                <span class="ignored-method-name">StartDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">StopDriver</span>
+                <br/>
+                <span class="ignored-method-name">StartDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-nopcommerce_website" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.UserRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">StartDriver(chrome)</span>
+                <span class="method-name">StartDriver(headless)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">41925 ms</span>
+                <span class="method-start">6690 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">waitt</span>
-                <span class="method-start">49677 ms</span>
+                <span class="method-start">7048 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Register with valid data.", "Optional[Test the Registration functionality]")</span>
-                <span class="method-start">49685 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanSearchForProduct</span>
+                <span class="method-start">7059 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">ScreenshotOnFailure([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">50387 ms</span>
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanSearchForProduct status=FAILURE method=SearchTest.UserCanSearchForProduct()[...)</span>
+                <span class="method-start">58423 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">59472 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">59483 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SentProductToFriendUsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">59501 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">59507 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SentProductToFriendUsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">59517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserCanRegistrationSuccessfully</span>
+                <span class="method-start">59525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanRegistrationSuccessfully status=SUCCESS method=SentProductToFriendUsingTest....)</span>
+                <span class="method-start">63672 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">63673 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanRegistrationSuccessfully</span>
+                <span class="method-start">63679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanRegistrationSuccessfully status=FAILURE method=UserRegistrationTest.UserCanR...)</span>
+                <span class="method-start">113991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">User_Can_Logout</span>
+                <span class="method-start">114245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">User_Can_Login</span>
+                <span class="method-start">114255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">114260 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">114263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanSearchForProduct_UsingAutoSugest</span>
+                <span class="method-start">114270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanSearchForProduct_UsingAutoSugest status=FAILURE method=CheckoutTest.UserCanS...)</span>
+                <span class="method-start">114937 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SentProductToFriendUsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">115205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanSearchForProduct_UsingAutoSugest</span>
+                <span class="method-start">115210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanSearchForProduct_UsingAutoSugest status=FAILURE method=SentProductToFriendUs...)</span>
+                <span class="method-start">115666 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">115891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_Can_Add_Product_To_Cart</span>
+                <span class="method-start">115895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=User_Can_Add_Product_To_Cart status=FAILURE method=CheckoutTest.User_Can_Add_Produc...)</span>
+                <span class="method-start">316201 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SentProductToFriendUsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">316400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserCanSentproductToFriendUsingEmail</span>
+                <span class="method-start">316407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanSentproductToFriendUsingEmail status=FAILURE method=SentProductToFriendUsing...)</span>
+                <span class="method-start">316411 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">316603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_Can_Checkout_FromCart</span>
+                <span class="method-start">316608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=User_Can_Checkout_FromCart status=FAILURE method=CheckoutTest.User_Can_Checkout_Fro...)</span>
+                <span class="method-start">366855 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">waitt</span>
-                <span class="method-start">50389 ms</span>
+                <span class="method-start">367100 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Register with valid data.", "Optional[Test the Registration functionality]")</span>
-                <span class="method-start">50398 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_Can_Downloading_Orderinformation</span>
+                <span class="method-start">367105 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">ScreenshotOnFailure([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">50423 ms</span>
+                <span class="method-name">ScreenshotOnFailure([TestResult name=User_Can_Downloading_Orderinformation status=FAILURE method=CheckoutTest.User_Can_D...)</span>
+                <span class="method-start">417325 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">50424 ms</span>
+                <span class="method-start">417527 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SentProductToFriendUsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">waitt</span>
+                <span class="method-start">417530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">User_Can_Logout</span>
+                <span class="method-start">417535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=User_Can_Logout status=SUCCESS method=SentProductToFriendUsingTest.User_Can_Logout(...)</span>
+                <span class="method-start">417584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">417584 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">StopDriver</span>
-                <span class="method-start">52429 ms</span>
+                <span class="method-start">417775 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -299,4 +936,3 @@ return data;
   </body>
 <script type="text/javascript" src="testng-reports2.js"></script>
 </html>
-ml>
