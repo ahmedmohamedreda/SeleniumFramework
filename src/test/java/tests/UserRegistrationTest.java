@@ -18,7 +18,7 @@ public class UserRegistrationTest extends TestBase
 		HomeObj=new HomePage(driver);
 		HomeObj.OpenRegistrationPage();
 		RegisterObj=new UserRegistrationPage(driver);
-		RegisterObj.UserRegistrationForm(" Ahmed ", "m.Reda ","Ahned112@gmail.ccc","123456789E");
+		RegisterObj.UserRegistrationForm(" Ahmed ", "m.Reda ","Ahned212@gmail.ccc","123456789E");
 		Assert.assertTrue(RegisterObj.SuccessMessage.getText().contains("completed"));
 	}
 	@Test(dependsOnMethods = {"UserCanRegistrationSuccessfully"} )
@@ -31,7 +31,7 @@ public class UserRegistrationTest extends TestBase
 	{
 		HomeObj.OpenLoginPage();
 		loginObj=new LoginPage(driver);
-		loginObj.LoginForm("Ahned12@gmail.ccc","123456789E");
+		loginObj.LoginForm("Ahned212@gmail.ccc","123456789E");
 		Assert.assertTrue(RegisterObj.logoutButton.isDisplayed());
 	}
 }

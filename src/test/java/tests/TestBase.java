@@ -46,7 +46,7 @@ public class TestBase   extends AbstractTestNGCucumberTests
 	{
 		if (browserName.equalsIgnoreCase("chrome")) 
 		{
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\REE\\chromedriver_90.0.4430.24.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\REE\\ChromeDriver 91.0.4472.101.exe");
 			driver=new ChromeDriver(chromeOption());
 		}
 		else if (browserName.equalsIgnoreCase("firefox")) {

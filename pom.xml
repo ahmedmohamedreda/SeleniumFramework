@@ -94,7 +94,6 @@
 			<version>6.10.0</version>
 		</dependency>
 
-
 <!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
 <dependency>
     <groupId>com.codeborne</groupId>
