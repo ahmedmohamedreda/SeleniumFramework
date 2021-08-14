@@ -64,7 +64,15 @@ public class TestBase   extends AbstractTestNGCucumberTests
                         System.getProperty("user.dir")+"\\REE\\phantomjs.exe");
             String[] phantomjsArgs={"--web-security=no","--ignore-ssl-errors=yes"}; 
             caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomjsArgs);
-            driver=new PhantomJSDriver(caps);
+            driver=new PhantomJSDriver(caps);       
+		}
+		else if (browserName.equalsIgnoreCase("headless_chrome")) {
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\REE\\ChromeDriver 91.0.4472.101.exe");
+
+			ChromeOptions  options=new ChromeOptions();
+             options.addArguments("--headless");
+             options.addArguments("--window-size=1920,1080");
+            driver=new ChromeDriver(options);
             
 		}
 		driver.manage().window().maximize();
